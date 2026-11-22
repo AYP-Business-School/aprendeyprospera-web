@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Calendario, costos y becas, Unidad de Bienestar Estudiantil, políticas y preguntas frecuentes de los programas de Aprende y Prospera.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admisiones | Aprende y Prospera</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#14213D}a:hover{color:#9B1D2E}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.nav-links{display:flex;gap:28px}
+.hero{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:center}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.g6{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:24px}
+.who{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.burger{display:none}
+.evgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.stats5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.stats5>div{padding:12px 10px!important}
+.stats5>div>div:first-child{font-size:21px!important}
+@media (max-width: 600px){.stats5{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.evfeat{grid-column:span 2}
+@media (max-width: 900px){.evgrid{grid-template-columns:minmax(0,1fr)}.evfeat{grid-column:auto}}
+.mega{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.15fr);gap:40px}
+.mega a:hover{color:#9B1D2E}
+.mosaic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:200px;gap:16px}
+.mosaic .big{grid-column:span 2;grid-row:span 2}
+.mosaic .wide{grid-column:span 2}
+.ph{background:#E3E8EF;border-radius:16px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+@media (max-width: 1100px){.nav-links{display:none}.burger{display:flex}.g6{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width: 900px){.mosaic{grid-template-columns:repeat(2,minmax(0,1fr))}.hero,.who,.split{grid-template-columns:minmax(0,1fr)}.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.hide-sm{display:none}}
+@media (max-width: 600px){.mosaic{grid-auto-rows:160px}.mosaic .big{grid-row:span 1}.wrap{padding:0 20px}.g2,.g3,.g4{grid-template-columns:minmax(0,1fr)}.g6{grid-template-columns:repeat(2,minmax(0,1fr))}.h1{font-size:40px !important}.h2{font-size:30px !important}}
+</style>
+
+<style>[hidden]{display:none !important} .burger{cursor:pointer}</style>
+
+<style>
+.eyebrow{margin:0;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9B1D2E}
+.sec{padding:72px 0;border-top:1px solid #E3E8EF;scroll-margin-top:72px}
+.sec h2{margin:12px 0 0;font-size:36px;line-height:1.12;font-weight:800;letter-spacing:-.01em}
+.lead{margin:16px 0 0;font-size:18px;line-height:1.65;color:#3A4A5E;max-width:820px}
+.body p{font-size:17px;line-height:1.7;color:#3A4A5E;max-width:820px}
+.card{border:1px solid #E3E8EF;border-radius:16px;padding:28px;background:#fff}
+.card h3{margin:0;font-size:20px;font-weight:800;line-height:1.3}
+.card p{margin:10px 0 0;font-size:16px;line-height:1.6;color:#3A4A5E}
+.meta{margin:0;font-size:13px;font-weight:700;color:#4A5568}
+.todo{margin-top:20px;border:1.5px dashed #E0A800;background:#FFF8DB;border-radius:12px;padding:16px 20px;font-size:15px;line-height:1.6;color:#5B4A00;max-width:820px}
+.todo strong{color:#3D3100}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chips a{text-decoration:none;font-size:14px;font-weight:700;background:#fff;border:1px solid #CFE6F0;border-radius:999px;padding:8px 14px}
+.chips a:hover{border-color:#03C2FF;color:#14213D}
+.list{margin:16px 0 0;padding-left:20px;font-size:16px;line-height:1.7;color:#3A4A5E}
+.list li{margin:4px 0}
+.btn{display:inline-block;text-decoration:none;background:#03C2FF;color:#14213D;border-radius:8px;padding:13px 22px;font-weight:800;font-size:15px}
+.btn2{display:inline-block;text-decoration:none;border:1.5px solid #14213D;border-radius:8px;padding:12px 22px;font-weight:700;font-size:15px}
+.tbl{width:100%;border-collapse:collapse;margin-top:20px;font-size:16px}
+.tbl th,.tbl td{text-align:left;padding:14px 12px;border-bottom:1px solid #E3E8EF;vertical-align:top}
+.tbl th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#4A5568}
+.person{display:flex;flex-direction:column;gap:2px;padding:14px 0;border-bottom:1px solid #EEF1F5}
+.person b{font-size:16px}.person span{font-size:14px;color:#4A5568;line-height:1.45}
+.prog{border-top:6px solid var(--c1)}
+.prog .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--c1);color:#14213D;border-radius:999px;padding:4px 10px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin-top:24px}
+.facts div{background:#F4F7FA;border-radius:12px;padding:16px}
+.facts b{display:block;font-size:13px;color:#4A5568;font-weight:700}
+.facts span{display:block;margin-top:6px;font-size:16px;font-weight:800;line-height:1.35}
+details.faq{border-bottom:1px solid #E3E8EF;padding:18px 0;max-width:860px}
+details.faq summary{cursor:pointer;font-size:17px;font-weight:800;list-style:none}
+details.faq summary::after{content:"+";float:right;font-weight:800;color:#9B1D2E}
+details.faq[open] summary::after{content:"–"}
+details.faq p{margin:10px 0 0;font-size:16px;line-height:1.65;color:#3A4A5E}
+@media (max-width:900px){.sec h2{font-size:30px}}
+@media (max-width:600px){.tbl{font-size:15px}}
+</style>
+<style id="ayp-polish">
+/* Pulido de acabado (Hallmark, nivel polish): mantiene el diseño, corrige detalles */
+html,body{overflow-x:clip}
+:where(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #14213D;outline-offset:2px;box-shadow:0 0 0 5px #FFFFFF;border-radius:6px}
+:where(a,button):active{transform:translateY(1px)}
+h1,h2,h3,.h1,.h2{text-wrap:balance;overflow-wrap:break-word;min-width:0}
+p,li{text-wrap:pretty}
+p.lead,.lead{max-width:68ch}
+.prog .tag,.tag{text-transform:none!important;letter-spacing:0!important;font-size:13px!important}
+.prog .tag{background:#FFFFFF!important;color:#14213D!important;box-shadow:inset 0 0 0 2px var(--c1)}
+.eyebrow,.tbl th,.meta,[style*="text-transform: uppercase"],[style*="text-transform:uppercase"]{text-transform:none!important;letter-spacing:0!important}
+.eyebrow,[style*="text-transform: uppercase"],[style*="text-transform:uppercase"]{font-size:15px!important}
+@media (min-width:901px){section .h2,section h2.h2{font-size:clamp(36px,3.4vw,46px)!important;line-height:1.1!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<link rel="stylesheet" href="ayp-ds.css">
+<link rel="alternate" hreflang="es" href="admisiones.html">
+<link rel="alternate" hreflang="en" href="en/admissions.html">
+</head>
+<body>
+<p class="strip">Vista de prueba del nuevo diseño: algunos enlaces aún no están activos.</p>
+
+<div style="font-family: 'Hanken Grotesk', system-ui, sans-serif; color: #14213D; background: #FFFFFF; width: 100%">
+
+<header class="nav night">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="mark.png" alt="" width="34" height="34">Aprende y Prospera</a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="nosotros.html">Nosotros</a>
+      <a href="programas.html">Programas</a>
+      <a href="admisiones.html">Admisiones</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+    <div class="nav-util">
+      <a href="https://virtual.aprendeyprospera.org">Campus Virtual</a>
+      <a href="https://bancodetalento-ayp.softr.app/">Banco de Talento</a>
+      <p class="lang" aria-label="Idioma"><span aria-current="true">ES</span> <a href="en/admissions.html" lang="en" hreflang="en">EN</a></p>
+      <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/AY6MTS8NQ4TKE">Dona</a>
+    </div>
+    <details class="menu">
+      <summary>Menú</summary>
+      <div class="menu-panel">
+        <a href="en/admissions.html" lang="en" hreflang="en">English</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="programas.html">Programas</a>
+        <a href="admisiones.html">Admisiones</a>
+        <a href="comunidad.html">Comunidad</a>
+        <a href="https://virtual.aprendeyprospera.org">Campus Virtual</a>
+        <a href="https://bancodetalento-ayp.softr.app/">Banco de Talento</a>
+        <a href="https://www.paypal.com/ncp/payment/AY6MTS8NQ4TKE">Dona</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+
+<section class="phero night">
+<div class="wrap"><div  style="align-items:stretch">
+<div>
+<p style="margin:0;font-size:14px;color:#4A5568"><a href="index.html" style="color:#4A5568">Inicio</a> <span aria-hidden="true">/</span> Admisiones</p>
+<h1 class="h1" style="margin:16px 0 0;font-size:52px;line-height:1.06;font-weight:800;letter-spacing:-.02em">Admisiones, costos y becas</h1>
+<p class="lead" style="font-size:19px">Te explicamos cómo funciona la admisión, cuánto cuesta cada programa y cómo te apoyamos si no puedes cubrir el aporte. Todo el proceso de matrícula y certificación está a cargo de AYP Business School.</p>
+<nav class="chips" aria-label="En esta página"><a href="#calendario">Calendario académico</a><a href="#costos">Costos y becas</a><a href="#bienestar">Unidad de Bienestar Estudiantil</a><a href="#reembolso">Políticas de reembolso</a><a href="#servicios">Servicios estudiantiles</a><a href="#faq">Preguntas frecuentes</a></nav>
+</div>
+</div></div>
+</section>
+<section id="convocatorias" class="sec"><div class="wrap">
+<h2>Por ahora no tenemos postulaciones abiertas</h2>
+<p class="lead">Estamos preparando las próximas convocatorias. Suscríbete a nuestras novedades y te avisaremos cuando abramos la postulación de cada programa.</p><div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px"><a class="btn" href="index.html#suscribete">Recibir novedades</a><a class="btn2" href="institucional.html#reglas">Reglas de participación</a></div>
+</div></section>
+<section id="calendario" class="sec" style="background:#F7FAFC"><div class="wrap">
+<h2>Calendario académico</h2>
+<table class="tbl"><thead><tr><th>Programa</th><th>Hito</th><th>Fecha</th></tr></thead><tbody><tr><td style='font-weight:800'>IA Agéntica Aplicada</td><td>Primera cohorte</td><td>Por anunciar</td></tr><tr><td style='font-weight:800'>Project Management &amp; Innovative Leadership</td><td>Próxima cohorte</td><td>Por anunciar</td></tr><tr><td style='font-weight:800'>E-Commerce y Marketing Digital (3.ª edición)</td><td>Próxima cohorte</td><td>Por anunciar</td></tr><tr><td style='font-weight:800'>Diseño Instruccional y Didáctica Digital</td><td>Próxima edición</td><td>Por anunciar</td></tr><tr><td style='font-weight:800'>Foros Virtuales</td><td>Cada tercer miércoles del mes</td><td>Foro 71: 16 de diciembre de 2026, 7:00 p.m. (Boston)</td></tr></tbody></table><div class="todo"><strong>Por completar:</strong> fechas de inicio de cada programa, Project Lab y Aulas Abiertas.</div>
+</div></section>
+<section id="costos" class="sec"><div class="wrap">
+<h2>Costos y becas</h2>
+<div class="g3" style="margin-top:28px;align-items:start"><article class="card" style=""><p class="meta">Costo real por estudiante</p><h3 style="margin-top:8px"><span style="font-size:40px">USD 5,040</span></h3><p>Es lo que cuesta realmente formar a un estudiante. Nuestra red de voluntarios cubre USD 3,040 de ese costo.</p></article><article class="card" style="border-top:6px solid #06B9E3"><p class="meta">Matrícula directa</p><h3 style="margin-top:8px"><span style="font-size:40px">USD 2,000</span></h3><p>Para quienes se matriculan directamente, sin postular a beca. Cubre el programa completo y el certificado final.</p></article><article class="card" style="border-top:6px solid #FCCE22"><p class="meta">Con beca del 92.5%</p><h3 style="margin-top:8px"><span style="font-size:40px">USD 150</span></h3><p>Si postulas a la beca del 92.5% y eres admitido, pagas un único aporte de USD 150 (S/ 530 en Perú).</p></article></div><h3 style="margin:36px 0 0;font-size:20px;font-weight:800">Formas de pago</h3><ul class="list"><li>Desde cualquier país, incluido Perú: PayPal o Stripe a nombre de AYP Business School.</li><li>Solo desde Perú: transferencia bancaria a Aprende y Prospera LatAm (RUC 20609198720). Los datos bancarios se entregan al confirmar tu admisión.</li></ul><p class="lead" style="font-size:16px">Los cursos cortos de Project Lab tienen un aporte de USD 20 con beca (S/ 30 en Perú).</p>
+</div></section>
+<section id="bienestar" class="sec" style="background:#F7FAFC"><div class="wrap">
+<h2>Unidad de Bienestar Estudiantil</h2>
+<div class="split" style="margin-top:24px;align-items:start"><div><p class="lead" style="margin-top:0">Si no puedes cubrir el aporte de USD 150, la Unidad de Bienestar Estudiantil evalúa tu caso de forma confidencial. Considera tu situación económica, tu récord académico, tu compromiso para completar el programa y tu compromiso de hacer voluntariado a cambio.</p><h3 style="margin:28px 0 0;font-size:18px;font-weight:800">Qué te pedimos</h3><ul class="list"><li>Formulario socioeconómico</li><li>Carta de intención</li><li>Tres referencias</li><li>CV de una página</li><li>Compromiso de voluntariado de 2 a 6 horas por semana</li><li>Buen rendimiento y compromiso de completar el programa</li></ul></div><div><table class="tbl" style="margin-top:0"><thead><tr><th>Voluntariado semanal</th><th>Tu aporte final</th></tr></thead><tbody><tr><td>2 horas</td><td style="font-weight:800">USD 100</td></tr><tr><td>4 horas</td><td style="font-weight:800">USD 50</td></tr><tr><td>6 horas</td><td style="font-weight:800">USD 0</td></tr></tbody></table><h3 style="margin:28px 0 0;font-size:18px;font-weight:800">Condiciones</h3><ul class="list"><li>Las becas complementarias son limitadas y se asignan según necesidad, mérito y compromiso.</li><li>El voluntariado es requisito para recibir el certificado; si no se completa, se debe pagar el monto exonerado.</li><li>Quien no complete el programa debe pagar el monto exonerado.</li><li>No se consideran postulaciones incompletas o fuera de plazo.</li></ul></div></div><p class="lead" style="font-size:16px">Roles de voluntariado en formación: asistente de docencia, asistente de aula, tutor académico, recursos de aprendizaje, apoyo a foros virtuales, apoyo de gestión académica, eventos virtuales, bases de datos y formularios, apoyo administrativo, gestión digital, embajador del programa, moderación de comunidad, creación de contenido y redes sociales. Algunos roles requieren un título universitario afín.</p><div class="todo"><strong>Por completar:</strong> correo o formulario para solicitar la evaluación de la Unidad de Bienestar.</div>
+</div></section>
+<section id="reembolso" class="sec"><div class="wrap">
+<h2>Políticas de reembolso</h2>
+<div class="todo"><strong>Por completar:</strong> política de reembolso oficial: plazos, porcentajes y cómo solicitarlo. Es un requisito de transparencia para NECHE y para la protección del estudiante.</div>
+</div></section>
+<section id="servicios" class="sec" style="background:#F7FAFC"><div class="wrap">
+<h2>Servicios estudiantiles</h2>
+<div class="g3" style="margin-top:24px"><article class="card" style=""><h3>Campus Virtual</h3><p>Materiales, foros, tareas y evaluaciones en Moodle.</p><a href="https://virtual.aprendeyprospera.org" target="_blank" rel="noopener" style="display:inline-block;margin-top:12px;font-weight:700;color:#9B1D2E">Entrar al Campus Virtual</a></article><article class="card" style=""><h3>Mentoría y coaching</h3><p>Acompañamiento personalizado para tu proyecto y tu plan de vida.</p></article><article class="card" style=""><h3>Banco de Talento</h3><p>Al egresar, tu perfil se suma a nuestra vitrina de talento para empresas y organizaciones.</p><a href="https://bancodetalento-ayp.softr.app/" target="_blank" rel="noopener" style="display:inline-block;margin-top:12px;font-weight:700;color:#9B1D2E">Ir al Banco de Talento</a></article><article class="card" style=""><h3>Experiencia estudiantil</h3><p>Un equipo dedicado a acompañarte desde la matrícula hasta la certificación.</p></article><article class="card" style=""><h3>Certificado verificable</h3><p>Certificado digital emitido por AYP Business School al completar el programa.</p></article><article class="card" style=""><h3>Comunidad</h3><p>Foros virtuales, eventos y una red de profesionales en América Latina y Estados Unidos.</p></article></div>
+</div></section>
+<section id="faq" class="sec"><div class="wrap">
+<h2>Preguntas frecuentes</h2>
+<div style="margin-top:20px"><details class="faq"><summary>¿Los programas otorgan créditos académicos o títulos?</summary><p>No. Son programas de educación continua sin créditos académicos. Al completarlos recibes un certificado digital emitido por AYP Business School.</p></details><details class="faq"><summary>¿Las clases son en vivo?</summary><p>Sí. Las clases son sincrónicas por Zoom, en horario nocturno y un sábado al mes. Las actividades y evaluaciones se realizan en el Campus Virtual (Moodle).</p></details><details class="faq"><summary>¿Cuánto cuesta una especialización?</summary><p>El costo real es USD 5,040. La matrícula directa es USD 2,000 y, si eres admitido a la beca del 92.5%, pagas un único aporte de USD 150 (S/ 530 en Perú).</p></details><details class="faq"><summary>¿Qué pasa si no puedo pagar los USD 150?</summary><p>Puedes pedir la evaluación de la Unidad de Bienestar Estudiantil. Según tu caso, tu aporte puede bajar a USD 100, 50 o 0 a cambio de 2, 4 o 6 horas semanales de voluntariado.</p></details><details class="faq"><summary>¿A quién le pago?</summary><p>Desde cualquier país, a AYP Business School por PayPal o Stripe. Desde Perú también puedes pagar por transferencia a Aprende y Prospera LatAm.</p></details><details class="faq"><summary>¿Puedo postular desde Estados Unidos?</summary><p>Sí. Nuestros programas están abiertos a profesionales de América Latina y a inmigrantes hispanos y latinos en Estados Unidos.</p></details><details class="faq"><summary>¿Qué necesito para estudiar?</summary><p>Un dispositivo con conexión a internet, cámara para las clases en vivo y disponibilidad para asistir en el horario del programa.</p></details></div>
+</div></section>
+<footer class="footer night">
+  <div class="container">
+    <div class="footer-top">
+      <div><img src="logo-latam.png" alt="Aprende y Prospera" width="160" height="80"><p style="margin-top:var(--space-md)"><a href="mailto:info@aprendeyprospera.org">info@aprendeyprospera.org</a></p></div>
+      <div><h3>Programas</h3><ul><li><a href="programas.html">Especializaciones</a></li><li><a href="programas.html#project-lab">Project Lab</a></li><li><a href="programas.html#aulas-abiertas">Aulas Abiertas</a></li><li><a href="admisiones.html#calendario">Calendario académico</a></li></ul></div>
+      <div><h3>Estudiantes</h3><ul><li><a href="admisiones.html">Admisiones</a></li><li><a href="admisiones.html#costos">Costos y becas</a></li><li><a href="admisiones.html#bienestar">Unidad de Bienestar</a></li><li><a href="https://bancodetalento-ayp.softr.app/">Banco de Talento</a></li></ul></div>
+      <div><h3>Institución</h3><ul><li><a href="nosotros.html">Nosotros y gobernanza</a></li><li><a href="institucional.html">Información institucional</a></li><li><a href="institucional.html#calidad">Calidad académica</a></li><li><a href="institucional.html#contacto">Contacto</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <p>Aprende y Prospera es una organización educativa global que opera a través de dos organizaciones sin fines de lucro independientes que trabajan de manera coordinada.</p>
+      <p>AYP Business School Corp., organización sin fines de lucro 501(c)(3), Massachusetts, EE. UU. Aprende y Prospera LatAm, asociación civil sin fines de lucro, Perú, RUC 20609198720.</p>
+      <p>Los programas de AYP son de educación continua y no otorgan créditos académicos ni títulos.</p>
+      <div class="legal-links"><a href="institucional.html#reglas">Reglas de participación</a><a href="institucional.html#no-discriminacion">No discriminación</a><a href="institucional.html#privacidad">Privacidad</a><a href="institucional.html#accesibilidad">Accesibilidad</a><span>© 2026 Aprende y Prospera</span></div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script>
+(function(){
+var btns=[].slice.call(document.querySelectorAll('[data-menu]'));
+function closeAll(except){btns.forEach(function(b){if(b!==except){b.setAttribute('aria-expanded','false');b.style.background='transparent';var p=document.getElementById('menu-'+b.dataset.menu);if(p)p.hidden=true;}});}
+btns.forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();var p=document.getElementById('menu-'+b.dataset.menu);var open=p.hidden;closeAll(b);p.hidden=!open;b.setAttribute('aria-expanded',String(open));b.style.background=open?'#EAF8FD':'transparent';});});
+document.addEventListener('click',function(e){if(!e.target.closest('.megapanel'))closeAll();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll();});
+// mobile menu
+var burger=document.querySelector('.burger');var mm=document.getElementById('mobile-menu');
+if(burger&&mm){burger.addEventListener('click',function(e){e.stopPropagation();mm.hidden=!mm.hidden;burger.setAttribute('aria-expanded',String(!mm.hidden));});}
+// language toggle note
+
+})();
+</script>
+</body>
+</html>

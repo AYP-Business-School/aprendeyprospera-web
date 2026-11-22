@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Aprende y Prospera forma a profesionales de América Latina e inmigrantes latinos en EE. UU. con especializaciones en vivo, 100 % virtuales y con becas.">
+<title>Aprende y Prospera | Educación para el talento latino</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;800&amp;display=swap" rel="stylesheet">
+<style>
+/* Hallmark · shape: Ledger (index-led, the offer as signature) · genre: modern-minimal · theme: brand · redesign: full
+ * paper: #FFFFFF · accent: #03C2FF · display: Hanken Grotesk 800 · body: Hanken Grotesk · hero: Stage · nav: dense bar · footer: index columns (real sitemap) · signature: the price ladder, USD 5,040 to USD 150
+ * axes: light/grotesk-heavy/chromatic-cyan · posture: ink hero, white body, one cyan signal · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R3 V4 · weakest: R, many sections on a hub home; each takes a different composition */
+/* Hallmark · waive 71: index rows set the title beside its meta, the measured gap is the row hairline · waive 49b: long link labels in the footer and cards wrap at 320px by design */
+:root {
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem);
+  --text-huge: clamp(4.5rem, 10vw, 9.5rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --dur-micro: 120ms; --dur-short: 220ms;
+  --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-sticky-nav: 300;
+  --color-paper: #FFFFFF; --color-paper-2: #F3F6FA; --color-paper-3: #E6ECF3;
+  --color-ink: #14213D; --color-ink-2: #2B3A55; --color-muted: #55637A;
+  --color-rule: #D9E1EA;
+  --color-night: #0E1830; --color-night-2: #1B2A4A; --color-night-text: #FFFFFF; --color-night-muted: #B3C1D6; --color-night-rule: #2E4066;
+  --color-accent: #03C2FF; --color-accent-ink: #14213D; --color-focus: #14213D; --color-focus-night: #03C2FF;
+  --color-yellow: #FCCE22; --color-lime: #CBD823; --color-wine: #9B1D2E;
+  --font-display: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif; --font-body: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --display-weight: 800;
+  --shadow-cover: 0 12px 30px -12px rgb(20 33 61 / 0.35);
+  --radius-card: 8px; --radius-pill: 999px; --rule-hair: 1px;
+  --tracking-display: -0.03em;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scroll-padding-top: var(--space-3xl); scrollbar-color: var(--color-muted) var(--color-paper); }
+::selection { background: var(--color-accent); color: var(--color-accent-ink); }
+body { margin: 0; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); font-size: var(--text-md); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
+.night :focus-visible { outline-color: var(--color-focus-night); }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+h1, h2, h3 { margin: 0; font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--tracking-display); line-height: 1.04; overflow-wrap: break-word; min-width: 0; text-wrap: balance; }
+h1 { font-size: var(--text-display); max-width: 14ch; }
+h2 { font-size: var(--text-section); max-width: 22ch; }
+h3 { font-size: var(--text-title); line-height: 1.25; letter-spacing: -0.015em; }
+p { margin: 0; text-wrap: pretty; }
+.lead { font-size: var(--text-lead); line-height: 1.45; max-width: 52ch; color: var(--color-muted); }
+img { max-width: 100%; height: auto; display: block; }
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+.num { font-variant-numeric: tabular-nums; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.night { background: var(--color-night); color: var(--color-night-text); }
+.night .lead, .night .muted { color: var(--color-night-muted); }
+.muted { color: var(--color-muted); }
+
+/* Controls: one primary style, one secondary, eight states */
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 var(--space-lg); border-radius: var(--radius-pill); font-weight: 800; font-size: var(--text-md); text-decoration: none; white-space: nowrap; border: 2px solid transparent; cursor: pointer; transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out); }
+.btn-primary { background: var(--color-accent); color: var(--color-accent-ink); }
+.btn-primary:hover { background: var(--color-paper); }
+.btn-primary:active { transform: translateY(1px); }
+.btn-secondary { border-color: currentColor; color: inherit; background: transparent; }
+.btn-secondary:hover { background: var(--color-ink); color: var(--color-paper); border-color: var(--color-ink); }
+.night .btn-secondary:hover { background: var(--color-paper); color: var(--color-ink); border-color: var(--color-paper); }
+.btn-secondary:active { transform: translateY(1px); }
+.btn[aria-disabled="true"], .btn:disabled { opacity: 0.45; pointer-events: none; }
+.light .btn-primary:hover, .paper .btn-primary:hover { background: var(--color-ink); color: var(--color-paper); }
+.link { font-weight: 800; text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; text-underline-offset: 0.25em; transition: text-decoration-color var(--dur-micro) var(--ease-out); }
+.link:hover { text-decoration-color: currentColor; }
+.actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+
+/* Top strip and nav */
+.strip { background: var(--color-yellow); color: var(--color-ink); text-align: center; font-size: var(--text-sm); font-weight: 600; padding: var(--space-xs) var(--space-md); }
+.nav { position: sticky; top: 0; z-index: var(--z-sticky-nav); background: var(--color-night); color: var(--color-night-text); border-bottom: var(--rule-hair) solid var(--color-night-rule); }
+.nav .container { display: flex; align-items: center; gap: var(--space-xl); min-height: 72px; }
+.brand { display: flex; align-items: center; gap: var(--space-sm); text-decoration: none; font-weight: 800; font-size: 1.125rem; letter-spacing: -0.01em; }
+.brand img { width: 34px; height: 34px; object-fit: contain; }
+.nav-links { display: flex; gap: var(--space-lg); margin-left: auto; }
+.nav-links a, .nav-util a, .nav-util span { text-decoration: none; font-weight: 600; font-size: 0.9375rem; color: var(--color-night-muted); padding: var(--space-xs) 0; transition: color var(--dur-micro) var(--ease-out); }
+.nav-links a:hover, .nav-util a:hover { color: var(--color-night-text); }
+.nav-util { display: flex; align-items: center; gap: var(--space-lg); }
+.nav-util .lang { color: var(--color-night-text); }
+.nav-util .lang span { color: var(--color-night-muted); }
+.nav-util a.btn-primary, .nav-util a.btn-primary:hover { color: var(--color-accent-ink); }
+.nav-util a.btn-primary:hover { background: var(--color-paper); }
+.nav .btn { min-height: 40px; padding: 0 var(--space-md); font-size: 0.9375rem; }
+.menu { display: none; margin-left: auto; }
+.menu summary { list-style: none; cursor: pointer; font-weight: 800; padding: var(--space-xs) var(--space-md); border: 2px solid var(--color-night-rule); border-radius: var(--radius-pill); }
+.menu summary::-webkit-details-marker { display: none; }
+.menu[open] .menu-panel { display: grid; }
+.menu-panel { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--color-night); color: var(--color-night-text); padding: var(--space-lg) var(--gutter) var(--space-xl); gap: var(--space-md); border-bottom: var(--rule-hair) solid var(--color-night-rule); }
+.menu-panel a { color: var(--color-night-text); text-decoration: none; font-weight: 800; font-size: var(--text-lg); }
+
+/* Hero: Stage on the night paper */
+.hero { padding-block: var(--space-2xl); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-3xl); align-items: center; min-height: min(600px, calc(100dvh - 190px)); }
+.hero h1 { color: var(--color-night-text); }
+.hero .lead { margin-top: var(--space-lg); }
+.hero .actions { margin-top: var(--space-xl); }
+.hero-visual { position: relative; display: block; aspect-ratio: 4 / 3; max-height: 560px; width: 100%; color: var(--color-night-text); border-radius: var(--radius-card); overflow: hidden; text-decoration: none; background: var(--color-night-2); }
+.hero-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-short) var(--ease-out); }
+.hero-visual:hover img { transform: scale(1.02); }
+.hero-visual .play { position: absolute; left: var(--space-lg); bottom: var(--space-lg); display: flex; align-items: center; gap: var(--space-sm); background: var(--color-paper); color: var(--color-ink); border-radius: var(--radius-pill); padding: var(--space-xs) var(--space-lg) var(--space-xs) var(--space-xs); font-weight: 800; }
+.hero-visual .play i { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--color-accent); }
+.hero-visual .play svg { width: 16px; height: 16px; fill: var(--color-ink); margin-left: var(--space-3xs); }
+
+/* Figures */
+.figures { padding-block: var(--space-2xl); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.figures ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.figures li { padding: var(--space-sm) var(--space-lg); border-left: var(--rule-hair) solid var(--color-rule); }
+.figures li:first-child { border-left: 0; padding-left: 0; }
+.figures b { font-variant-numeric: tabular-nums; display: block; font-size: var(--text-display-s); font-weight: 800; letter-spacing: var(--tracking-display); line-height: 1; }
+.figures span { display: block; margin-top: var(--space-xs); color: var(--color-muted); font-size: var(--text-md); }
+
+/* Section shell */
+.section { padding-block: var(--section-gap); }
+.section.tight { padding-block: var(--section-gap-s); }
+.paper2 { background: var(--color-paper-2); }
+.head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gap-columns); align-items: end; margin-bottom: var(--space-2xl); }
+.head .lead { justify-self: end; }
+.head-solo { margin-bottom: var(--space-2xl); }
+.head-solo .lead { margin-top: var(--space-md); }
+
+/* Programs: Index */
+.index { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--color-ink); }
+.index li { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 2fr) minmax(0, 4fr) auto; gap: var(--gap-columns); align-items: center; padding-block: var(--space-lg); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.index .meta { color: var(--color-muted); font-size: var(--text-sm); font-weight: 600; }
+.index p { color: var(--color-ink-2); }
+.tag { display: inline-block; margin-right: var(--space-xs); margin-bottom: var(--space-2xs); padding: var(--space-3xs) var(--space-sm); border-radius: var(--radius-pill); background: var(--color-lime); color: var(--color-ink); font-size: var(--text-sm); font-weight: 800; letter-spacing: 0; vertical-align: middle; }
+.index-sub { margin-top: var(--space-3xl); margin-bottom: var(--space-lg); display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gap-columns); align-items: end; }
+.index-sub h2 { font-size: var(--text-xl); }
+.index .go { justify-self: end; }
+
+/* Signature: the price ladder */
+.offer { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-3xl); align-items: center; }
+.offer .lead { margin-top: var(--space-lg); }
+.ladder { list-style: none; margin: 0; padding: 0; }
+.ladder li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: var(--space-lg); padding-block: var(--space-md); border-bottom: var(--rule-hair) solid var(--color-night-rule); color: var(--color-night-muted); }
+.ladder li b { font-size: var(--text-display-s); font-weight: 800; letter-spacing: var(--tracking-display); line-height: 1; color: var(--color-night-muted); }
+.ladder li.win { border-bottom: 0; padding-top: var(--space-lg); color: var(--color-night-text); }
+.ladder li.win b { font-size: var(--text-huge); color: var(--color-accent); }
+.offer .actions { margin-top: var(--space-xl); }
+
+/* Events and news: Split */
+.split { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gap-columns); align-items: stretch; }
+.forum { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); background: var(--color-night); color: var(--color-night-text); border-radius: var(--radius-card); overflow: hidden; min-height: 440px; }
+.forum-num { display: flex; flex-direction: column; justify-content: flex-end; padding: var(--space-xl); background: var(--color-accent); color: var(--color-ink); }
+.forum-num b { font-variant-numeric: tabular-nums; font-size: var(--text-huge); line-height: 0.85; letter-spacing: -0.05em; font-weight: 800; }
+.forum-num span { margin-top: var(--space-md); font-weight: 800; font-size: var(--text-lg); }
+.forum-body { padding: var(--space-xl); display: flex; flex-direction: column; gap: var(--space-md); }
+.forum-body h3 { font-size: var(--text-xl); }
+.forum-body .actions { margin-top: auto; padding-top: var(--space-md); }
+.forum details { color: var(--color-night-muted); font-size: var(--text-sm); }
+.forum summary { cursor: pointer; font-weight: 800; color: var(--color-night-text); }
+.forum details ul { margin: var(--space-xs) 0 0; padding-left: var(--space-md); line-height: 1.7; }
+.news { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--color-ink); }
+.news li { padding-block: var(--space-md); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.news .kind { font-size: var(--text-sm); font-weight: 800; color: var(--color-wine); }
+.news h3 { font-size: 1.125rem; margin-top: var(--space-2xs); letter-spacing: -0.01em; }
+.news h3 a { text-decoration: none; }
+.news h3 a:hover { text-decoration: underline; }
+.news p { margin-top: var(--space-2xs); color: var(--color-muted); font-size: var(--text-sm); }
+.formats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap-columns); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: var(--rule-hair) solid var(--color-rule); }
+.formats p { color: var(--color-muted); margin-top: var(--space-xs); }
+.formats small { display: block; font-size: var(--text-sm); font-weight: 600; color: var(--color-muted); }
+
+/* Model: two-column rows */
+.rows2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-3xl); border-top: 2px solid var(--color-ink); }
+.rows2 div { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: var(--space-lg); padding-block: var(--space-lg); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.rows2 p { color: var(--color-muted); }
+
+/* Community: Showcase plus rail */
+.show { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: var(--space-md); }
+.show figure { margin: 0; position: relative; border-radius: var(--radius-card); overflow: hidden; }
+.show figure img { width: 100%; height: 100%; object-fit: cover; }
+.show .big { grid-row: span 2; aspect-ratio: 16 / 10; }
+.show figcaption { position: absolute; left: var(--space-sm); bottom: var(--space-sm); background: var(--color-paper); color: var(--color-ink); font-size: var(--text-sm); font-weight: 600; padding: var(--space-2xs) var(--space-sm); border-radius: var(--radius-pill); }
+.rail-head { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-lg); margin-top: var(--space-2xl); margin-bottom: var(--space-lg); }
+.rail { list-style: none; margin: 0; padding: 0 0 var(--space-sm); display: grid; grid-auto-flow: column; grid-auto-columns: minmax(280px, 1fr); gap: var(--space-lg); overflow-x: auto; scroll-snap-type: x mandatory; }
+.rail li { scroll-snap-align: start; }
+.rail a { display: block; text-decoration: none; }
+.rail .thumb { display: block; position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-card); overflow: hidden; background: var(--color-paper-3); }
+.rail .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-short) var(--ease-out); }
+.rail a:hover .thumb img { transform: scale(1.03); }
+.rail small { display: block; margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--color-muted); font-weight: 600; }
+.rail h3 { font-size: 1.125rem; margin-top: var(--space-2xs); letter-spacing: -0.01em; }
+
+/* Talent and review: Bento */
+.bento { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gap-columns); }
+.tile { border-radius: var(--radius-card); padding: var(--space-2xl) var(--space-xl); display: flex; flex-direction: column; gap: var(--space-md); min-height: 420px; }
+.tile .actions { margin-top: auto; padding-top: var(--space-lg); }
+.tile-talent { background: var(--color-lime); color: var(--color-ink); }
+.tile-talent h2 { max-width: 16ch; }
+.tile-talent p { color: var(--color-ink-2); max-width: 48ch; font-size: var(--text-lead); }
+.tile-review { background: var(--color-paper-2); border: var(--rule-hair) solid var(--color-rule); }
+.tile-review img { width: min(260px, 100%); background: var(--color-paper); border-radius: var(--radius-card); padding: var(--space-sm) var(--space-md); box-shadow: var(--shadow-cover); }
+.tile-review > div { display: flex; flex-direction: column; gap: var(--space-md); flex: 1; margin-top: var(--space-lg); }
+.tile-review h3 { font-size: var(--text-section); }
+.tile-review p { color: var(--color-muted); }
+
+/* Organizations and history */
+.orgs { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-3xl); align-items: start; }
+.orgs .lead { margin-top: var(--space-lg); }
+.orgs .link { display: inline-block; margin-top: var(--space-lg); }
+.org-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap-columns); }
+.org { border-top: 4px solid var(--color-accent); padding-top: var(--space-lg); }
+.org + .org { border-top-color: var(--color-yellow); }
+.org small { display: block; font-size: var(--text-sm); font-weight: 600; color: var(--color-muted); }
+.org h3 { margin-top: var(--space-xs); }
+.org p { margin-top: var(--space-sm); color: var(--color-ink-2); }
+.org p.muted { color: var(--color-muted); font-size: var(--text-sm); }
+.timeline { list-style: none; margin: var(--space-3xl) 0 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--gap-columns); border-top: 2px solid var(--color-ink); }
+.timeline li { padding-top: var(--space-lg); }
+.timeline b { display: block; font-size: var(--text-xl); font-weight: 800; letter-spacing: -0.02em; }
+.timeline p { margin-top: var(--space-xs); font-size: var(--text-sm); color: var(--color-muted); }
+
+/* Join: rows plus close */
+.join { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: var(--space-3xl); }
+.join ul { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--color-ink); }
+.join li a { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 6fr) minmax(0, 2fr); gap: var(--space-lg); align-items: center; padding-block: var(--space-lg); border-bottom: var(--rule-hair) solid var(--color-rule); text-decoration: none; transition: background-color var(--dur-micro) var(--ease-out); }
+.join li a:hover { background: var(--color-paper-2); }
+.join li p { color: var(--color-muted); }
+.join .cue { justify-self: end; font-weight: 800; text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; text-underline-offset: 0.25em; }
+.close { margin-top: var(--section-gap-s); background: var(--color-night); color: var(--color-night-text); border-radius: var(--radius-card); padding: var(--space-2xl); display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-xl); align-items: center; }
+.close .lead { margin-top: var(--space-md); }
+.close .actions { justify-content: flex-end; }
+.close small { display: block; margin-top: var(--space-sm); color: var(--color-night-muted); text-align: right; }
+
+/* Footer */
+.footer { background: var(--color-night); color: var(--color-night-muted); padding-block: var(--space-3xl) var(--space-xl); font-size: var(--text-sm); }
+.footer-top { display: grid; grid-template-columns: minmax(0, 4fr) repeat(3, minmax(0, 2fr)); gap: var(--gap-columns); padding-bottom: var(--space-2xl); border-bottom: var(--rule-hair) solid var(--color-night-rule); }
+.footer-top img { width: 160px; height: auto; background: var(--color-paper); border-radius: var(--radius-card); padding: var(--space-sm); }
+.footer h3 { color: var(--color-night-text); font-size: var(--text-md); letter-spacing: 0; }
+.footer ul { list-style: none; margin: var(--space-md) 0 0; padding: 0; display: grid; gap: var(--space-xs); }
+.footer a { text-decoration: none; }
+.footer a:hover { color: var(--color-night-text); text-decoration: underline; }
+.legal { padding-top: var(--space-xl); display: grid; gap: var(--space-xs); max-width: 90ch; }
+.legal-links { display: flex; flex-wrap: wrap; gap: var(--space-lg); margin-top: var(--space-md); }
+
+@media (max-width: 75rem) {
+  .nav-links, .nav-util { display: none; }
+  .menu { display: block; }
+}
+@media (max-width: 60rem) {
+  :root { --gutter: 24px; --section-gap-s: 80px; --section-gap: 96px; --section-gap-l: 120px; }
+  .hero-grid, .offer, .split, .bento, .orgs, .join, .close, .head { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
+  .hero-grid { min-height: 0; }
+  .hero-visual { min-height: 0; }
+  .head .lead { justify-self: start; }
+  .index li { grid-template-columns: minmax(0, 1fr); gap: var(--space-xs); }
+  .index .go { justify-self: start; }
+  .figures ul { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: var(--space-lg); }
+  .figures li:nth-child(3) { border-left: 0; padding-left: 0; }
+  .rows2 { grid-template-columns: minmax(0, 1fr); }
+  .show { grid-template-columns: minmax(0, 1fr); }
+  .show .big { grid-row: auto; }
+  .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .formats { grid-template-columns: minmax(0, 1fr); }
+  .footer-top { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .close .actions { justify-content: flex-start; }
+  .close small { text-align: left; }
+}
+@media (max-width: 40rem) {
+  :root { --gutter: 16px; --section-gap-s: 56px; --section-gap: 72px; --gap-columns: 16px; }
+  .footer-top { grid-template-columns: minmax(0, 1fr); }
+  .index-sub { grid-template-columns: minmax(0, 1fr); }
+  .join .cue { justify-self: start; }
+  .forum, .org-pair, .rows2 div, .join li a { grid-template-columns: minmax(0, 1fr); }
+  .tile { padding: var(--space-xl) var(--space-lg); min-height: 0; }
+  .close { padding: var(--space-xl) var(--space-lg); }
+  .actions .btn { flex: 1 1 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+</style>
+<link rel="alternate" hreflang="es" href="index.html">
+<link rel="alternate" hreflang="en" href="en/index.html">
+</head>
+<body>
+<p class="strip">Vista de prueba del nuevo diseño: algunos enlaces aún no están activos.</p>
+
+<header class="nav night">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="mark.png" alt="" width="34" height="34">Aprende y Prospera</a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="nosotros.html">Nosotros</a>
+      <a href="programas.html">Programas</a>
+      <a href="admisiones.html">Admisiones</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+    <div class="nav-util">
+      <a href="https://virtual.aprendeyprospera.org">Campus Virtual</a>
+      <a href="https://bancodetalento-ayp.softr.app/">Banco de Talento</a>
+      <p class="lang" aria-label="Idioma"><span aria-current="true">ES</span> <a href="en/index.html" lang="en" hreflang="en">EN</a></p>
+      <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/AY6MTS8NQ4TKE">Dona</a>
+    </div>
+    <details class="menu">
+      <summary>Menú</summary>
+      <div class="menu-panel">
+        <a href="en/index.html" lang="en" hreflang="en">English</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="programas.html">Programas</a>
+        <a href="admisiones.html">Admisiones</a>
+        <a href="comunidad.html">Comunidad</a>
+        <a href="https://virtual.aprendeyprospera.org">Campus Virtual</a>
+        <a href="https://bancodetalento-ayp.softr.app/">Banco de Talento</a>
+        <a href="https://www.paypal.com/ncp/payment/AY6MTS8NQ4TKE">Dona</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main>
+<section class="hero night" aria-labelledby="hero-h">
+  <div class="container hero-grid">
+    <div>
+      <h1 id="hero-h">Educación que abre caminos al talento latino</h1>
+      <p class="lead">Especializaciones prácticas, en vivo y 100&nbsp;% virtuales, para profesionales de América Latina e inmigrantes latinos en EE.&nbsp;UU.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="programas.html">Ver programas</a>
+        <a class="btn btn-secondary" href="admisiones.html#costos">Costos y becas</a>
+      </div>
+    </div>
+    <a class="hero-visual" href="https://www.youtube.com/@aprendeyprosperalatam3778">
+      <img src="fotos/hero-talento-latino-ia.jpg" alt="Panel Talento Latino en la Era de la IA en Venture Café, Cambridge, con el público de Aprende y Prospera" width="1200" height="900">
+      <span class="play"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i>Video institucional</span>
+    </a>
+  </div>
+</section>
+
+<section class="figures" aria-label="Aprende y Prospera en cifras">
+  <div class="container">
+    <ul>
+      <li><b class="num">2020</b><span>año de origen</span></li>
+      <li><b class="num">20</b><span>países</span></li>
+      <li><b class="num">130</b><span>voluntarios</span></li>
+      <li><b class="num">70</b><span>foros virtuales</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="programas" aria-labelledby="prog-h">
+  <div class="container">
+    <div class="head">
+      <h2 id="prog-h">Programas para crecer profesionalmente</h2>
+      <p class="lead">Educación continua sin créditos académicos, con clases en vivo, mentoría y proyectos reales. Ofrecidos y certificados por AYP Business School.</p>
+    </div>
+    <ul class="index">
+      <li>
+        <h3>Project Management &amp; Innovative Leadership</h3>
+        <span class="meta">7 meses, 10 cursos + taller de coaching</span>
+        <p>Metodologías predictivas y ágiles, IA y preparación para la certificación PMP®.</p>
+        <a class="link go" href="programas.html#project-management">Ver programa</a>
+      </li>
+      <li>
+        <h3>E-Commerce y Marketing Digital</h3>
+        <span class="meta">7 meses, 10 cursos + taller de coaching</span>
+        <p>Un negocio digital real desde el primer día: SEO, SEM, growth, pagos y logística.</p>
+        <a class="link go" href="programas.html#ecommerce">Ver programa</a>
+      </li>
+      <li>
+        <h3>Diseño Instruccional y Didáctica Digital</h3>
+        <span class="meta">7 meses, 10 cursos + taller de coaching</span>
+        <p>Experiencias de aprendizaje virtuales e híbridas con herramientas actuales e IA.</p>
+        <a class="link go" href="programas.html#diseno-instruccional">Ver programa</a>
+      </li>
+      <li>
+        <h3>IA Agéntica Aplicada para la Automatización y el Liderazgo Empresarial</h3>
+        <span class="meta"><span class="tag">Nueva</span> 5 meses, 6 cursos + taller de coaching</span>
+        <p>Agentes de IA para automatizar procesos y liderar la transformación de tu organización.</p>
+        <a class="link go" href="programas.html#ia-agentica">Ver programa</a>
+      </li>
+    </ul>
+    <div class="index-sub"><h2>Emprendimiento y formación continua</h2><p class="lead">Para lanzar tu proyecto o actualizar tus habilidades sin un programa largo.</p></div>
+    <ul class="index">
+      <li>
+        <h3>Project Lab: Emprendimiento Circular e Innovación</h3>
+        <span class="meta">Incubación con pre-incubación y mentoría</span>
+        <p>Diagnóstico, ruta personalizada, cursos a elección y mentoría para lanzar y escalar.</p>
+        <a class="link go" href="programas.html#project-lab">Ver programa</a>
+      </li>
+      <li>
+        <h3>Aulas Abiertas</h3>
+        <span class="meta">Cursos cortos, seminarios y talleres</span>
+        <p>Formación breve en temas de alta demanda, en vivo y a tu ritmo.</p>
+        <a class="link go" href="programas.html#aulas-abiertas">Ver próximos cursos</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section night" id="costos" aria-labelledby="cost-h">
+  <div class="container offer">
+    <div>
+      <h2 id="cost-h">Una beca que cubre el 92.5&nbsp;%</h2>
+      <p class="lead">Nuestros voluntarios cubren USD 3,040 del costo real. Si eres admitido a la beca pagas un único aporte (S/ 530 en Perú). ¿No puedes cubrirlo? La Unidad de Bienestar Estudiantil evalúa tu caso.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="admisiones.html#costos">Costos, becas y Bienestar</a>
+      </div>
+    </div>
+    <ul class="ladder" aria-label="Costo de una especialización">
+      <li><span>Costo real por estudiante</span><b class="num">USD 5,040</b></li>
+      <li><span>Matrícula directa</span><b class="num">USD 2,000</b></li>
+      <li class="win"><span>Con beca del 92.5&nbsp;%</span><b class="num">USD 150</b></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="eventos" aria-labelledby="ev-h">
+  <div class="container">
+    <div class="head">
+      <h2 id="ev-h">Próximos eventos y novedades</h2>
+      <p class="lead"><a class="link" href="comunidad.html#eventos">Ver todos los eventos</a></p>
+    </div>
+    <div class="split">
+      <article class="forum night" aria-labelledby="f71">
+        <div class="forum-num"><b class="num">71</b><span>Foro Virtual</span></div>
+        <div class="forum-body">
+          <p class="muted">Miércoles 16 de diciembre, 7:00 p.m. (Boston), por Zoom</p>
+          <h3 id="f71">Ecosistemas de Innovación EdTech: Modelos de Escalabilidad y Alianzas Estratégicas en LatAm</h3>
+          <p class="muted">Gratis y con certificado de participación para quienes asisten.</p>
+          <details>
+            <summary>Horario en tu país</summary>
+            <ul>
+              <li>6:00 p.m. México, Guatemala, Honduras, El Salvador y Costa Rica</li>
+              <li>7:00 p.m. Perú, Colombia, Ecuador, Panamá, Cuba y EE. UU. Este</li>
+              <li>8:00 p.m. República Dominicana, Puerto Rico, Bolivia y Venezuela</li>
+              <li>9:00 p.m. Chile, Argentina, Brasil, Paraguay y Uruguay</li>
+            </ul>
+          </details>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://forosayp.softr.app/foros-virtuales#registro" target="_blank" rel="noopener">Regístrate gratis</a>
+            <a class="btn btn-secondary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Foro+Virtual+71+%28Aprende+y+Prospera%29&amp;dates=20261217T000000Z%2F20261217T013000Z&amp;details=Ecosistemas+de+Innovaci%C3%B3n+EdTech%3A+Modelos+de+Escalabilidad+y+Alianzas+Estrat%C3%A9gicas+en+LatAm.+Registro%3A+https%3A%2F%2Fforosayp.softr.app%2Fforos-virtuales&amp;location=Zoom" target="_blank" rel="noopener">Agregar al calendario</a>
+          </div>
+        </div>
+      </article>
+      <ul class="news" aria-label="Novedades">
+        <li><p class="kind">Reconocimientos 2026</p><h3>Muy pronto: AYP Dream Builders Awards 2026</h3><p>Reconocemos a los voluntarios más destacados del año y a quienes han impulsado el crecimiento de Aprende y Prospera.</p></li>
+        <li><p class="kind">AYP Impact Review</p><h3><a href="https://ayp-business-school.github.io/ayp-impact-review/lector-n2.html">Ya salió el número 2 de nuestra revista</a></h3></li>
+        <li><p class="kind">Nueva especialización</p><h3><a href="programas.html#ia-agentica">Lanzamos IA Agéntica Aplicada</a></h3></li>
+        <li><p class="kind">Evento, octubre de 2026</p><h3><a href="comunidad.html#eventos-2026">Talento Latino en la Era de la IA reunió a la comunidad en Cambridge</a></h3></li>
+        <li><p class="kind">Programas</p><h3><a href="programas.html#aulas-abiertas">Aulas Abiertas: cursos cortos para actualizar tus habilidades</a></h3></li>
+      </ul>
+    </div>
+    <div class="formats">
+      <div><small>Cada tercer miércoles, en línea</small><h3>Foros Virtuales</h3><p>Expertos internacionales en innovación, tecnología y negocios, en vivo por Facebook, YouTube y LinkedIn.</p></div>
+      <div><small>Presencial, Cambridge, MA</small><h3>Disruptor Series</h3><p>Paneles y talleres sobre innovación y tecnología en distintas industrias, con transmisión en vivo.</p></div>
+      <div><small>Clases magistrales</small><h3>AYP Master Class</h3><p>Líderes globales comparten estrategia, mercados y transformación con las nuevas generaciones.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section paper2" id="modelo" aria-labelledby="mod-h">
+  <div class="container">
+    <div class="head-solo"><h2 id="mod-h">Aprender haciendo, con acompañamiento</h2></div>
+    <div class="rows2">
+      <div><h3>Clases en vivo</h3><p>Sesiones por Zoom en horario nocturno, más un sábado al mes.</p></div>
+      <div><h3>Campus Virtual</h3><p>Materiales, foros, tareas y evaluaciones en Moodle, en una sola plataforma.</p></div>
+      <div><h3>Aprendizaje experiencial</h3><p>Equipos que resuelven retos reales de empresas y organizaciones aliadas.</p></div>
+      <div><h3>Docentes internacionales</h3><p>Profesionales de América Latina y Estados Unidos con experiencia en la industria.</p></div>
+      <div><h3>Mentoría y coaching</h3><p>Acompañamiento personalizado para tu proyecto y tu plan de vida.</p></div>
+      <div><h3>Certificado verificable</h3><p>Certificado digital emitido por AYP Business School al completar el programa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="comunidad" aria-labelledby="com-h">
+  <div class="container">
+    <div class="head">
+      <h2 id="com-h">Así se vive Aprende y Prospera</h2>
+      <p class="lead">Fotos y videos de nuestros eventos, clases y celebraciones. <a class="link" href="comunidad.html#galeria">Ver galería completa</a></p>
+    </div>
+    <div class="show">
+      <figure class="big"><img src="fotos/noche-latina-1.jpg" alt="Foto grupal de la comunidad de Aprende y Prospera en la Noche Latina, en ZUMIX" loading="lazy" width="1200" height="900"><figcaption>Noche Latina, East Boston, 2026</figcaption></figure>
+      <figure><img src="fotos/talento-latino-ia-panel.jpg" alt="Panelistas de Talento Latino en la Era de la IA en Venture Café" loading="lazy" width="1200" height="800"><figcaption>Talento Latino en la Era de la IA</figcaption></figure>
+      <figure><img src="fotos/talento-latino-ia-publico.jpg" alt="Sala llena en Cambridge, MA" loading="lazy" width="1200" height="800"><figcaption>Sala llena en Cambridge, MA</figcaption></figure>
+    </div>
+    <div class="rail-head"><h3>Videos destacados</h3><a class="link" href="https://www.youtube.com/@aprendeyprosperalatam3778">Canal de YouTube</a></div>
+    <ul class="rail">
+      <li><a href="https://youtu.be/j59_FJiQcCw"><span class="thumb"><img src="fotos/video-gamificar.jpg" alt="" loading="lazy"></span><small>Nuevo video</small><h3>Más allá del juego. ¿Qué es realmente gamificar?</h3></a></li>
+      <li><a href="https://youtu.be/b_iaJjGS-BI"><span class="thumb"><img src="fotos/video-foro69.jpg" alt="" loading="lazy"></span><small>Foro 69</small><h3>IA: de la medicina humana a la medicina inteligente</h3></a></li>
+      <li><a href="https://www.youtube.com/live/1nQIuruBWZk"><span class="thumb"><img src="fotos/video-masterclass-iagen.jpg" alt="" loading="lazy"></span><small>AYP Master Class, Erika Offerman</small><h3>IA generativa como aliada en el diseño instruccional</h3></a></li>
+      <li><a href="https://www.youtube.com/live/OWSU6dnNVS8"><span class="thumb"><img src="fotos/video-masterclass1.jpg" alt="" loading="lazy"></span><small>AYP Master Class 1, Prof. Dr. Jürgen Paulus</small><h3>Gaming, TikTok y cambio climático</h3></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section tight" id="talento" aria-label="Banco de Talento y AYP Impact Review">
+  <div class="container bento">
+    <div class="tile tile-talent">
+      <h2>Conectamos a nuestros egresados con oportunidades</h2>
+      <p>Empresas y organizaciones conocen los perfiles de nuestros egresados en el Banco de Talento AYP. Los exalumnos acceden a ofertas laborales, eventos y desarrollo profesional.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://bancodetalento-ayp.softr.app/">Ver egresados</a>
+        <a class="btn btn-secondary" href="https://bancodetalento-ayp.softr.app/empresas">Publicar una oportunidad</a>
+      </div>
+    </div>
+    <div class="tile tile-review">
+      <img src="impact-review.png" alt="AYP Impact Review" loading="lazy" width="400" height="120">
+      <div>
+        <h3>Revista digital de impacto</h3>
+        <p>AYP Impact Review: revista semestral y gratuita sobre educación, innovación, emprendimiento y desarrollo del talento latino.</p>
+        <div class="actions" style="margin-top:auto">
+          <a class="link" href="https://ayp-business-school.github.io/ayp-impact-review/">Leer la revista</a>
+          <a class="link" href="comunidad.html#revista">Envía tu artículo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section paper2" id="nosotros" aria-labelledby="org-h">
+  <div class="container">
+    <div class="orgs">
+      <div>
+        <h2 id="org-h">Una visión global, dos organizaciones</h2>
+        <p class="lead">Aprende y Prospera nació en 2020 para ampliar el acceso a educación de calidad y a oportunidades económicas. Dos organizaciones sin fines de lucro colaboran para llevar a cabo una misma misión.</p>
+        <a class="link" href="nosotros.html#organizaciones">Conoce nuestra estructura y gobernanza</a>
+      </div>
+      <div class="org-pair">
+        <div class="org"><small>Massachusetts, EE. UU.</small><h3>AYP Business School</h3><p>Lidera los programas académicos, la matrícula, la certificación y la gestión financiera.</p><p class="muted">Organización sin fines de lucro 501(c)(3)</p></div>
+        <div class="org"><small>Lima, Perú</small><h3>Aprende y Prospera LatAm</h3><p>Origen de la iniciativa. Atiende proyectos en América Latina y la matrícula y los pagos de estudiantes en Perú.</p><p class="muted">Asociación civil sin fines de lucro, RUC 20609198720</p></div>
+      </div>
+    </div>
+    <ol class="timeline" aria-label="Nuestra historia">
+      <li><b class="num">2020</b><p>Nace en junio en el hackathon MIT Latinoamérica vs COVID-19.</p></li>
+      <li><b class="num">2021</b><p>Se constituye Aprende y Prospera LatAm en Perú.</p></li>
+      <li><b class="num">2022</b><p>Primera especialización: Project Management.</p></li>
+      <li><b class="num">2023</b><p>Nace AYP Business School en Massachusetts y la especialización en E-Commerce.</p></li>
+      <li><b class="num">2024</b><p>Diseño Instruccional y Project Lab.</p></li>
+      <li><b class="num">2025</b><p>Modelo de responsabilidad compartida: beca con aporte o voluntariado.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="participa" aria-labelledby="join-h">
+  <div class="container">
+    <div class="join">
+      <div><h2 id="join-h">Súmate a la misión</h2><p class="lead" style="margin-top:var(--space-md)">Una red internacional de voluntarios, mentores y aliados hace posible cada programa.</p></div>
+      <ul>
+        <li><a href="comunidad.html#voluntariado"><h3>Voluntariado</h3><p>Únete a nuestra red internacional y revisa las vacantes abiertas.</p><span class="cue">Ver vacantes</span></a></li>
+        <li><a href="comunidad.html#mentoria"><h3>Mentoría</h3><p>Acompaña a estudiantes y emprendedores con tu experiencia.</p><span class="cue">Ser mentor</span></a></li>
+        <li><a href="comunidad.html#patrocinio"><h3>Patrocinio de becas</h3><p>Apoya a estudiantes con talento y limitaciones económicas.</p><span class="cue">Patrocinar</span></a></li>
+        <li><a href="comunidad.html#donaciones"><h3>Donaciones</h3><p>Deducibles de impuestos en EE. UU. a través de AYP Business School.</p><span class="cue">Donar</span></a></li>
+      </ul>
+    </div>
+    <div class="close night" id="suscribete">
+      <div>
+        <h2>Recibe nuestras novedades</h2>
+        <p class="lead">Convocatorias, becas, eventos y cada nueva edición de AYP Impact Review.</p>
+      </div>
+      <div>
+        <div class="actions"><a class="btn btn-primary" href="https://8664065e.sibforms.com/serve/MUIFAKSFh9o9mRnR3yELMc2qykSKq_gzWDTWXiDLhjth4D7y-1P6YwcR5sXWdLPED7hBjwd-ot3IagC7DMCCv9JtHUNi7vZnzjZFE_nSTsvOWiqr9WHSG_E7cokD_O816F6woPP9PpZ4D_xyeD_hyceP5nZ79t3wCUG-Vi-1oGiHTNOrFto3w_pQzmaP86LMcNl0SOB5ga0g0Q3P_A==" target="_blank" rel="noopener">Suscribirme al boletín</a></div>
+        <small>Te pediremos confirmar tu correo.</small>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer night">
+  <div class="container">
+    <div class="footer-top">
+      <div><img src="logo-latam.png" alt="Aprende y Prospera" width="160" height="80"><p style="margin-top:var(--space-md)"><a href="mailto:info@aprendeyprospera.org">info@aprendeyprospera.org</a></p></div>
+      <div><h3>Programas</h3><ul><li><a href="programas.html">Especializaciones</a></li><li><a href="programas.html#project-lab">Project Lab</a></li><li><a href="programas.html#aulas-abiertas">Aulas Abiertas</a></li><li><a href="admisiones.html#calendario">Calendario académico</a></li></ul></div>
+      <div><h3>Estudiantes</h3><ul><li><a href="admisiones.html">Admisiones</a></li><li><a href="admisiones.html#costos">Costos y becas</a></li><li><a href="admisiones.html#bienestar">Unidad de Bienestar</a></li><li><a href="https://bancodetalento-ayp.softr.app/">Banco de Talento</a></li></ul></div>
+      <div><h3>Institución</h3><ul><li><a href="nosotros.html">Nosotros y gobernanza</a></li><li><a href="institucional.html">Información institucional</a></li><li><a href="institucional.html#calidad">Calidad académica</a></li><li><a href="institucional.html#contacto">Contacto</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <p>Aprende y Prospera es una organización educativa global que opera a través de dos organizaciones sin fines de lucro independientes que trabajan de manera coordinada.</p>
+      <p>AYP Business School Corp., organización sin fines de lucro 501(c)(3), Massachusetts, EE. UU. Aprende y Prospera LatAm, asociación civil sin fines de lucro, Perú, RUC 20609198720.</p>
+      <p>Los programas de AYP son de educación continua y no otorgan créditos académicos ni títulos.</p>
+      <div class="legal-links"><a href="institucional.html#reglas">Reglas de participación</a><a href="institucional.html#no-discriminacion">No discriminación</a><a href="institucional.html#privacidad">Privacidad</a><a href="institucional.html#accesibilidad">Accesibilidad</a><span>© 2026 Aprende y Prospera</span></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
