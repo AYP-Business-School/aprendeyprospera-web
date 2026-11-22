@@ -102,7 +102,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero .actions { margin-top: var(--space-xl); }
 .hero-visual { position: relative; display: block; aspect-ratio: 4 / 3; max-height: 560px; width: 100%; color: var(--color-night-text); border-radius: var(--radius-card); overflow: hidden; text-decoration: none; background: var(--color-night-2); }
 .hero-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-short) var(--ease-out); }
-.hero-visual:hover img { transform: scale(1.02); }
+
 .hero-visual .play { position: absolute; left: var(--space-lg); bottom: var(--space-lg); display: flex; align-items: center; gap: var(--space-sm); background: var(--color-paper); color: var(--color-ink); border-radius: var(--radius-pill); padding: var(--space-xs) var(--space-lg) var(--space-xs) var(--space-xs); font-weight: 800; }
 .hero-visual .play i { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--color-accent); }
 .hero-visual .play svg { width: 16px; height: 16px; fill: var(--color-ink); margin-left: var(--space-3xs); }
@@ -325,10 +325,9 @@ img { max-width: 100%; height: auto; display: block; }
         <a class="btn btn-secondary" href="admissions.html#costos">Costs and scholarships</a>
       </div>
     </div>
-    <a class="hero-visual" href="https://www.youtube.com/@aprendeyprosperalatam3778">
+    <div class="hero-visual">
       <img src="../fotos/hero-talento-latino-ia.jpg" alt="Latino Talent in the Age of AI panel at Venture Café, Cambridge, with the Aprende y Prospera audience" width="1200" height="900">
-      <span class="play"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i>Institutional video</span>
-    </a>
+    </div>
   </div>
 </section>
 
