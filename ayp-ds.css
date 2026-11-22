@@ -67,7 +67,7 @@ img { max-width: 100%; height: auto; display: block; }
 .nav { position: sticky; top: 0; z-index: var(--z-sticky-nav); background: var(--color-night); color: var(--color-night-text); border-bottom: var(--rule-hair) solid var(--color-night-rule); }
 .nav .container { display: flex; align-items: center; gap: var(--space-xl); min-height: 72px; }
 .brand { display: flex; align-items: center; gap: var(--space-sm); text-decoration: none; font-weight: 800; font-size: 1.125rem; letter-spacing: -0.01em; }
-.brand img { width: 34px; height: 34px; object-fit: contain; }
+.brand img { width: auto; height: 46px; display: block; }
 .nav-links { display: flex; gap: var(--space-lg); margin-left: auto; }
 .nav-links a, .nav-util a, .nav-util span { text-decoration: none; font-weight: 600; font-size: 0.9375rem; color: var(--color-night-muted); padding: var(--space-xs) 0; transition: color var(--dur-micro) var(--ease-out); }
 .nav-links a:hover, .nav-util a:hover { color: var(--color-night-text); }
