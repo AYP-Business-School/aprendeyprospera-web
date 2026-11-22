@@ -133,3 +133,6 @@ body { font-family: var(--font-body); }
 .phero .chips a:hover { background: var(--color-paper) !important; color: var(--color-ink) !important; border-color: var(--color-paper) !important; }
 .phero :focus-visible { outline-color: var(--color-focus-night); }
 .phero img { border-radius: var(--radius-card) !important; }
+
+/* Notas internas "Por completar": ocultas en la versión pública */
+.todo { display: none !important; }
